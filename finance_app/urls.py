@@ -5,5 +5,10 @@ from . import views
 app_name = 'finance_app'
 
 urlpatterns = [
+    path('', RedirectView.as_view(url='dashboard'), name='dashboard'),
+    path('login', views.login_view, name='login'),
+    path('logout', views.logout_view, name='logout'),
+    path('register', views.register, name='register'),
+
     
 ]
