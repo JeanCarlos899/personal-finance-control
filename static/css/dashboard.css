@@ -1,0 +1,35 @@
+.info-box::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: #F5F5F5;
+}
+
+.col-md-10 {
+  background-color: #f8f9fa;
+}
+
+.dark-mode .col-md-10 {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.navbar-brand {
+  color: #333333;
+}
+
+.dark-mode .navbar-brand {
+  color: white;
+}
+
+.text-center {
+  color: #666666;
+}
+
+.dark-mode .text-center {
+  color: white;
+}
