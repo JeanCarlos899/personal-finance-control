@@ -1,21 +1,21 @@
-{% extends "financeapp/index.html" %}
+{% extends "finance_app/index.html" %}
 {% load static %}
 {% block title %}Gestor de Finanças - Início{% endblock title %}
 {% block contentnav %}
-<form action="{% url 'financeapp:dashboard' %}" method="GET">
-    <div class="input-group input-group-sm">
-      <div class="input-group-prepend">
-        <span class="input-group-text">De</span>
-      </div>
-      <input type="date" class="form-control" aria-label="De" name="start_date" value="{{ start_date }}" required>
-      <div class="input-group-prepend">
-        <span class="input-group-text">Até</span>
-      </div>
-      <input type="date" class="form-control" aria-label="Até" name="end_date" value="{{ end_date }}" required>
-      <div class="input-group-append">
-        <button type="submit" class="btn btn-primary btn-block">Filtrar</button>
-      </div>
+<form action="{% url 'finance_app:dashboard' %}" method="GET">
+  <div class="input-group input-group-sm">
+    <div class="input-group-prepend">
+      <span class="input-group-text">De</span>
     </div>
+    <input type="date" class="form-control" aria-label="De" name="start_date" value="{{ start_date }}" required>
+    <div class="input-group-prepend">
+      <span class="input-group-text">Até</span>
+    </div>
+    <input type="date" class="form-control" aria-label="Até" name="end_date" value="{{ end_date }}" required>
+    <div class="input-group-append">
+      <button type="submit" class="btn btn-primary btn-block">Filtrar</button>
+    </div>
+  </div>
 </form>
 <button class="btn btn-outline-info ml-4" data-toggle="modal" data-target="#modalFilters">
   <i class="fas fa-filter"></i>
@@ -115,5 +115,5 @@
 {% endblock scripts %}
 
 {% block modal %}
-  {% include 'financeapp/includes/modal-filters.html' %}
+{% include 'finance_app/includes/modal-filters.html' %}
 {% endblock modal %}

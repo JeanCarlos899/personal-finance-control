@@ -1,0 +1,30 @@
+{% extends "financeapp/index.html" %}
+{% load static %}
+
+{% block title %}Gestor de Finanças - Sobre{% endblock title %}
+
+{% block content %}
+<div class="row about-content pt-2 pl-2 pr-2 mt-4" style="font-family: 'Roboto', sans-serif;">
+    <div class="row about-content pt-0 pl-2 pr-2" style="font-family: 'Roboto', sans-serif;">
+        <div class="col text-justify">
+            <h4>Bem-vindo à página de informações do Controle de Finanças Pessoais!</h4>
+            <p class="mt-4">O Controle de Finanças Pessoais é projetado para ajudar indivíduos a tomar o controle de
+                suas finanças. Nosso objetivo é fornecer uma solução abrangente e intuitiva que ajude os usuários a
+                alcançar
+                a estabilidade financeira, estabelecer metas e tomar decisões informadas sobre seus recursos
+                financeiros.</p>
+            <p>O programa foi desenvolvido por: Avelar Rodrigues, Jean Carlos e Karielly de Carvalho. Somos estudantes
+                do Instituto Federal do Piauí - Campus Picos, que desenvolvemos esse Controle de Finanças Pessoais. Com
+                a
+                orientação e supervisão do Professor Marco Antônio. Projeto da disciplina de Análise e Projeto de Sistemas.
+            </p>
+            <p>Estamos aqui para ajudar! Se você tiver dúvidas, sugestões ou precisar de suporte, entre em contato
+                conosco através do email: <a href="mailto:admin@gmail.com">admin@gmail.com</a>. Nossa equipe estará
+                pronta para atendê-lo e fornecer a assistência necessária.</p>
+        </div>
+        <div class="col-6 d-flex align-content-center">
+            <img src="{% static 'img/imagem.png'%}" alt="" style="width: 100%; margin-left: 20px; height: 80%;">
+        </div>
+    </div>
+</div>
+{% endblock content %}
