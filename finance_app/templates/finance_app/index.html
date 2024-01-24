@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <a class="navbar-brand text-white" href="{% url 'finance_app:dashboard' %}">
             <i class="fas fa-landmark mr-1"></i>
-            GESTOR DE <strong>FINANÇAS</strong>
+            CONTROLE DE <strong>FINANÇAS PESSOAIS</strong> 
         </a>
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto"></ul>
@@ -84,6 +84,13 @@
                                     <a href="{% url 'finance_app:extract' %}" class="nav-link" id="extract">
                                         <i class="fa-solid fa-clipboard-list"></i>
                                         Extrato
+                                    </a>
+                                </li>
+                                <li>
+                                    <!-- sobre -->
+                                    <a href="{% url 'finance_app:about' %}" class="nav-link" id="about">
+                                        <i class="fa-solid fa-info-circle"></i>
+                                        Sobre
                                     </a>
                                 </li>
                             </ul>

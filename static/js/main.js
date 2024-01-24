@@ -14,20 +14,28 @@ const addEventListeners = () => {
 const sidebarFunctions = () => {
     const btnDashboard = document.getElementById("dashboard");
     const btnExtract = document.getElementById("extract");
+    const btnAbout = document.getElementById("about");
     const path = window.location.pathname;
 
     switch (path) {
         case "/dashboard":
             btnDashboard.classList.add("active");
             btnExtract.classList.add("text-body");
+            btnAbout.classList.add("text-body");
             break;
         case "/extract":
             btnExtract.classList.add("active");
-            btnDashboard.classList.add("text-dark");
+            btnDashboard.classList.add("text-body");
+            btnAbout.classList.add("text-body");
+            break;
+        case "/about":
+            btnAbout.classList.add("active");
+            btnDashboard.classList.add("text-body");
+            btnExtract.classList.add("text-body");
             break;
         default:
             btnDashboard.classList.add("active");
-            btnExtract.classList.add("text-dark");
+            btnExtract.classList.add("text-body");
             break;
     }
 }
