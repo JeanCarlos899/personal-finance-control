@@ -1,13 +1,20 @@
 ::-webkit-scrollbar-track {
     background-color: #212529;
 }
+
 ::-webkit-scrollbar {
     width: 10px;
     background: #F4F4F4;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #b4b4b4;
     border-radius: 2px;
+}
+
+.btn-primary {
+    background-color: blueviolet !important;
+    border-color: blueviolet !important;
 }
 
 /* sidebar */
@@ -28,19 +35,22 @@ hr {
 
 /* tamanho da fonte de acordo com o tamanho de tela */
 
-.btn.btn-outline-success.btn-md, .btn.btn-outline-danger.btn-md {
+.btn.btn-outline-success.btn-md,
+.btn.btn-outline-danger.btn-md {
     font-size: 1vw;
 }
 
-#extract, #dashboard, #about {
+#extract,
+#dashboard,
+#about {
     font-size: 1vw;
 }
 
 /* usuário */
 
-.rounded-circle{
-    width: 10vw; 
-    height: 10vw; 
+.rounded-circle {
+    width: 10vw;
+    height: 10vw;
     overflow: hidden;
 }
 
@@ -50,17 +60,20 @@ hr {
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 767px) {
-    .btn.btn-outline-success.btn-md, .btn.btn-outline-danger.btn-md {
+
+    .btn.btn-outline-success.btn-md,
+    .btn.btn-outline-danger.btn-md {
         font-size: 1rem !important;
     }
 
-    #extract, #dashboard #about {
+    #extract,
+    #dashboard #about {
         font-size: 1rem;
     }
 
-    .rounded-circle{
-        width: 10rem; 
-        height: 10rem; 
+    .rounded-circle {
+        width: 10rem;
+        height: 10rem;
         overflow: hidden;
     }
 

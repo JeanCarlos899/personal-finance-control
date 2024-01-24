@@ -115,7 +115,7 @@ class DashboardApp(ListView):
             end_date = user_end_date
         else:
             start_date = datetime.strftime(datetime(datetime.now().year, 1, 1).date(), '%Y-%m-%d')
-            end_date = datetime.now().date().strftime('%Y-%m-%d')
+            end_date = datetime.strftime(datetime(datetime.now().year, 12, 31).date(), '%Y-%m-%d')
         
         # Passando a data para o template
         context['start_date'] = start_date
