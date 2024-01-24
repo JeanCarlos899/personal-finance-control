@@ -20,21 +20,25 @@ const sidebarFunctions = () => {
     switch (path) {
         case "/dashboard":
             btnDashboard.classList.add("active");
+            btnDashboard.style.background = "rgba(128, 0, 128, 0.7)";
             btnExtract.classList.add("text-body");
             btnAbout.classList.add("text-body");
             break;
         case "/extract":
             btnExtract.classList.add("active");
+            btnExtract.style.background = "rgba(128, 0, 128, 0.7)";
             btnDashboard.classList.add("text-body");
             btnAbout.classList.add("text-body");
             break;
         case "/about":
             btnAbout.classList.add("active");
+            btnAbout.style.background = "rgba(128, 0, 128, 0.7)";
             btnDashboard.classList.add("text-body");
             btnExtract.classList.add("text-body");
             break;
         default:
             btnDashboard.classList.add("active");
+            b.style.background = "rgba(128, 0, 128, 0.7)";
             btnExtract.classList.add("text-body");
             break;
     }

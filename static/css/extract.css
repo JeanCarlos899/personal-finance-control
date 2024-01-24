@@ -1,0 +1,77 @@
+@media print {
+
+    .sidebar-class {
+        display: none !important;
+    }
+
+    .col-md-10 {
+        background-color: #ffffff !important;
+    }
+
+    #options {
+        display: none !important;
+    }
+
+    .nav-extract {
+        display: inline-block !important;
+        margin-bottom: 5% !important;
+    }
+
+    .nav-extract-date {
+        display: inline-block !important;
+    }
+
+    .filter {
+        display: none !important;
+    }
+
+
+
+    /* header {
+        display: none !important;
+    }
+
+    .col-2 {
+        display: none !important;
+    }
+
+    .prova {
+        width: 100% !important;
+        padding: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .central {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        width: 100% !important;
+    }
+
+    .container {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        width: 100% !important;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    #nota {
+        width: 100px !important;
+    }
+
+    #curso {
+        width: 380px !important;
+    }
+
+    #turma {
+        width: 150px !important;
+    }
+
+    .avaliacao {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        width: 100% !important;
+    } */
+}
