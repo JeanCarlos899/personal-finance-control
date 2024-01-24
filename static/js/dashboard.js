@@ -12,17 +12,15 @@ document.addEventListener('DOMContentLoaded', function () {
       {
         label: 'Receita',
         data: earningsList,
-        data: earningsList,
         fill: false,
-        borderColor: 'rgb(54, 162, 235)',
+        borderColor: 'rgb(255, 165, 0)', // Laranja
         tension: 0.1
       },
       {
         label: 'Despesa',
         data: expensesList,
-        data: expensesList,
         fill: false,
-        borderColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(128, 0, 128)', // Roxo Presto
         tension: 0.1
       }
     ]
@@ -44,15 +42,15 @@ document.addEventListener('DOMContentLoaded', function () {
       {
         label: 'Despesa',
         data: expensesList,
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgb(255, 99, 132)',
+        backgroundColor: 'rgba(128, 0, 128, 0.2)', // Roxo Presto
+        borderColor: 'rgb(128, 0, 128)',
         borderWidth: 1
       },
       {
         label: 'Receita',
         data: earningsList,
-        backgroundColor: 'rgb(54, 162, 235, 0.2)',
-        borderColor: 'rgb(54, 162, 235)',
+        backgroundColor: 'rgba(255, 165, 0, 0.2)', // Laranja
+        borderColor: 'rgb(255, 165, 0)',
         borderWidth: 1
       }
     ]
@@ -73,54 +71,67 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   // Gráfico de rosca receita 
-  const doughnutDataEarnings = {
-    labels: categoryEarnings,
-    datasets: [{
-      label: ['Valor'],
-      data: dataEarningsCategory,
-      hoverOffset: 4
-    }]
-  };
+  // Gráfico de rosca receita 
+const doughnutDataEarnings = {
+  labels: categoryEarnings,
+  datasets: [{
+    label: ['Valor'],
+    data: dataEarningsCategory,
+    hoverOffset: 4,
+    backgroundColor: [
+      'rgba(255, 165, 0, 0.7)', // Laranja
+      'rgba(255, 165, 0, 0.4)', // Laranja (hover)
+    ],
+    // borderColor: 'rgba(255, 165, 0, 1)', // Laranja
+    // borderWidth: 1
+  }]
+};
 
-  const doughnutConfigEarnings = {
-    type: 'doughnut',
-    data: doughnutDataEarnings,
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        title: {
-          display: true,
-          text: 'Receitas'
-        }
+const doughnutConfigEarnings = {
+  type: 'doughnut',
+  data: doughnutDataEarnings,
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      title: {
+        display: true,
+        text: 'Receitas'
       }
     }
-  };
+  }
+};
 
-  // Gráfico de rosca despesa
-  const doughnutDataExpenses = {
-    labels: categoryExpenses,
-    datasets: [{
-      label: ['Valor'],
-      data: dataExpensesCategory,
-      hoverOffset: 4
-    }]
-  };
+// Gráfico de rosca despesa
+const doughnutDataExpenses = {
+  labels: categoryExpenses,
+  datasets: [{
+    label: ['Valor'],
+    data: dataExpensesCategory,
+    hoverOffset: 4,
+    backgroundColor: [
+      'rgba(128, 0, 128, 0.7)', // Roxo Presto
+      'rgba(128, 0, 128, 0.4)', // Roxo Presto (hover)
+    ],
+    // borderColor: 'rgba(128, 0, 128, 1)', // Roxo Presto
+    // borderWidth: 1
+  }]
+};
 
-  const doughnutConfigExpenses = {
-    type: 'doughnut',
-    data: doughnutDataExpenses,
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        title: {
-          display: true,
-          text: 'Despesas'
-        }
+const doughnutConfigExpenses = {
+  type: 'doughnut',
+  data: doughnutDataExpenses,
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      title: {
+        display: true,
+        text: 'Despesas'
       }
     }
-  };
+  }
+};
 
   // radar chart
   
@@ -130,22 +141,22 @@ document.addEventListener('DOMContentLoaded', function () {
       label: 'Despesas',
       data: expensesList,
       fill: true,
-      backgroundColor: 'rgba(255, 99, 132, 0.2)',
-      borderColor: 'rgb(255, 99, 132)',
-      pointBackgroundColor: 'rgb(255, 99, 132)',
+      backgroundColor: 'rgba(128, 0, 128, 0.2)', // Roxo Presto
+      borderColor: 'rgb(128, 0, 128)',
+      pointBackgroundColor: 'rgb(128, 0, 128)',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgb(255, 99, 132)'
+      pointHoverBorderColor: 'rgb(128, 0, 128)'
     }, {
       label: 'Receitas',
       data: earningsList,
       fill: true,
-      backgroundColor: 'rgba(54, 162, 235, 0.2)',
-      borderColor: 'rgb(54, 162, 235)',
-      pointBackgroundColor: 'rgb(54, 162, 235)',
+      backgroundColor: 'rgba(255, 165, 0, 0.2)', // Laranja
+      borderColor: 'rgb(255, 165, 0)',
+      pointBackgroundColor: 'rgb(255, 165, 0)',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgb(54, 162, 235)'
+      pointHoverBorderColor: 'rgb(255, 165, 0)'
     }]
   };
 
@@ -162,7 +173,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },
   };
-
 
   new Chart(lineChart, config);
   new Chart(barras, barCol1Config);
