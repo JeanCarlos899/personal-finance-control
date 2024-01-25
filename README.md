@@ -82,7 +82,7 @@ Após criar o usuário com as suas credenciais você estará habilitado a entrar
 python manage.py runserver
 ```
 
-Agora, basta entrar no link fornecido no seu terminal em qualquer navegador instalado na sua máquina
+Agora, basta entrar no link fornecido no seu terminal em qualquer navegador instalado na sua máquina.
 
 ## Desenvolvedores
 
