@@ -13,6 +13,8 @@ Essas instruções fornecerão uma cópia do projeto em execução na sua máqui
 
 **Versão do Django**: `4.1.3`
 
+**Sistema operacional:** `Linux`
+
 O gerenciameto de dependências é feito usando o pip. Caso ocorra erros ao executar o aplicativo, tente seguir as instruções abaixo:
 
 ### Iniciando o projeto com o `virtualenv`
